@@ -8,54 +8,66 @@ public class Guerreiro{
     public int manaDoGuerreiro1 = 0;
     public int forcaDoGuerreiro1 = 10;
 
-    //guerreiro2
+    //Arqueiro
 
-    public String nomeDoGuerreiro2;
-    public String classeDoGuerreiro2 = "guerreiro";
-    public int nivelDoGuerreiro2 = 1;
-    public int vidaDoGuerreiro2 = 100;
-    public int manaDoGuerreiro2 = 0;
-    public int forcaDoGuerreiro2 = 10;
+    public String nomeDoArqueiro;
+    public String classeDoArqueiro = "Arqueiro";
+    public int nivelDoArqueiro = 1;
+    public int vidaDoArqueiro = 100;
+    public int manaDoArqueiro = 0;
+    public int forcaDoArqueiro = 10;
  
 
     // Metodosguerreiro1
     public void ataqueGuerreiro1(){
-        vidaDoGuerreiro2 -= 10;
+        vidaDoArqueiro -= 10;
 
-        String mensagem = "Ataque Soco = 10 \nVida do guerreiro2 depois do ataque = "+vidaDoGuerreiro2;
+        String mensagem = "Ataque Soco = 10 \nVida do arqueiro depois do ataque = "+vidaDoArqueiro;
         System.out.println(mensagem);
     } 
  
-    public void receberDano1(){
+    public void receberDanoGuerreiro(){
         vidaDoGuerreiro1 -= 10;
 
-       String mensagem = "Ataque do guerrreiro2 = 10 \nVida do guerreiro1 depois do ataque = "+vidaDoGuerreiro1;
+       String mensagem = "Ataque do Arqueiro = 10 \nVida do guerreiro depois do ataque = "+vidaDoGuerreiro1;
         System.out.println(mensagem);
     }
    
     public void usarHabilidadeEspecialGuerreiro1(){
 
-        vidaDoGuerreiro2 -=30;
+        vidaDoArqueiro -=30;
         manaDoGuerreiro1 -=50;
 
-       String mensagem = " Ataque especial = 30  \nVida do guerreiro2 depois do ataque = "+vidaDoGuerreiro2;
+       String mensagem = " Ataque especial = 30  \nVida do arqueiro depois do ataque = "+vidaDoArqueiro;
        System.out.println(mensagem);
        
     }
  
     public void mostrarStatusGuerreiro1(){
-        String mensagem = "Nome do guerreiro1: " +nomeDoGuerreiro1+" | Classe: "+classeDoGuerreiro1+" | Nível: "+nivelDoGuerreiro1+ " | Força: "+forcaDoGuerreiro1+ " | Mana: "+manaDoGuerreiro1;
+        String mensagem = "Nome do guerreiro: " +nomeDoGuerreiro1+" | Classe: "+classeDoGuerreiro1+" | Nível: "+nivelDoGuerreiro1+ " | Força: "+forcaDoGuerreiro1+ " | Mana: "+manaDoGuerreiro1;
+        String personagem = 
+        "  O  \n" +
+      " /|\\ \n" +
+      "  |   --|>\n" +
+      " / \\ \n";
+    
+
+                  
         System.out.println(mensagem);
+        System.out.println(personagem);
        
     }
  
     public void subirNivelGuerreiro1(){
         nivelDoGuerreiro1 += 1;
         vidaDoGuerreiro1 += 10;
+        if (vidaDoGuerreiro1 > 100){
+            vidaDoGuerreiro1 = 100;
+        }
         manaDoGuerreiro1 += 50;
         forcaDoGuerreiro1 +=10;
 
-        String mensagem = "Nível do guerreiro1: "+nivelDoGuerreiro1+ "\nVida do guerreiro1:"+vidaDoGuerreiro1;
+        String mensagem = "Nível do guerreiro: "+nivelDoGuerreiro1+ "\nVida do guerreiro:"+vidaDoGuerreiro1;
         System.out.println(mensagem);
     }
  
@@ -64,44 +76,48 @@ public class Guerreiro{
        
     }
 
-    // Metodosguerreiro2
-    public void ataqueGuerreiro2(){
+    // Metodos Arqueiro
+    public void ataqueArqueiro(){
         vidaDoGuerreiro1 -= 10;
 
-        String mensagem = "Ataque Soco = 10 \nVida do guerreiro1 depois do ataque = "+vidaDoGuerreiro1;
+        String mensagem = "Ataque de flexa = 10 \nVida do guerreiro depois do ataque = "+vidaDoGuerreiro1;
         System.out.println(mensagem);
     } 
  
-    public void receberDano2(){
-        vidaDoGuerreiro2 -= 10;
+    public void receberDanoArqueiro(){
+        vidaDoArqueiro -= 10;
 
-       String mensagem = "Ataque do guerrreiro1 = 10 \nVida do guerreiro2 depois do ataque = "+vidaDoGuerreiro2;
+       String mensagem = "Ataque do guerrreiro = 10 \nVida do arqueiro depois do ataque = "+vidaDoArqueiro;
         System.out.println(mensagem);
     }
    
-    public void usarHabilidadeEspecialGuerreiro2(){
+    public void usarHabilidadeEspecialArqueiro(){
 
         vidaDoGuerreiro1 -=30;
-        manaDoGuerreiro2 -=50;
+        manaDoArqueiro -=50;
 
-       String mensagem = " Ataque especial = 30  \nVida do guerreiro1 depois do ataque = "+vidaDoGuerreiro1;
+       String mensagem = " Ataque especial (Multiplas flexas)= 30  \nVida do guerreiro depois do ataque = "+vidaDoGuerreiro1;
        System.out.println(mensagem);
        
     }
  
-    public void mostrarStatusGuerreiro2(){
-        String mensagem = "Nome do guerreiro2: " +nomeDoGuerreiro2+" | Classe: "+classeDoGuerreiro2+" | Nível: "+nivelDoGuerreiro2+ " | Força: "+forcaDoGuerreiro2+ " | Mana: "+manaDoGuerreiro2;
+    public void mostrarStatusArqueiro(){
+        String mensagem = "Nome do arqueiro: " +nomeDoArqueiro+" | Classe: "+classeDoArqueiro+" | Nível: "+nivelDoArqueiro+ " | Força: "+forcaDoArqueiro+ " | Mana: "+manaDoArqueiro;
         System.out.println(mensagem);
        
     }
  
-    public void subirNivelGuerreiro2(){
-        nivelDoGuerreiro2 += 1;
-        vidaDoGuerreiro2 += 10;
-        manaDoGuerreiro2 += 50;
-        forcaDoGuerreiro2 +=10;
+    public void subirNivelArqueiro(){
+        nivelDoArqueiro += 1;
+        vidaDoArqueiro += 10;
+        if (vidaDoArqueiro > 100){
+            vidaDoArqueiro = 100;
+        }
+        manaDoArqueiro += 50;
+        forcaDoArqueiro +=10;
 
-        String mensagem = "Nível do guerreiro2: "+nivelDoGuerreiro2+ "\nVida do guerreiro2:"+vidaDoGuerreiro2;
+        String mensagem = "Nível do arqueiro: "+nivelDoArqueiro+ "\nVida do arqueiro:"+vidaDoArqueiro;
         System.out.println(mensagem);
     }
+
 }
