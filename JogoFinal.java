@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class JogoFinal{
 
@@ -65,66 +65,38 @@ public class JogoFinal{
                 }
 
                 // Verifica vitória do Guerreiro
-                if (jogo1.vidaDoArqueiro <= 0) {
-                    System.out.println("\nO arqueiro " + jogo2.nomeDoArqueiro + " foi derrotado!");
-                    System.out.println("O guerreiro " + jogo1.nomeDoGuerreiro1 + " venceu!");
+                if (jogo2.vidaDoGuerreiro1 <= 0) {
+                    System.out.println("\nO guerreiro2 " + jogo2.nomeDoGuerreiro1 + " foi derrotado!");
+                    System.out.println("O guerreiro1 " + jogo1.nomeDoGuerreiro1 + " venceu!");
                     jogoAtivo = false;
                     break;
                 }
-            }
-    }
-    // Turno do Guerreiro2
-            for (int i = 1; i <= 3; i++) {
-                System.out.println("\nTurno de "+jogo2.nomeDoGuerreiro1+" - Acao " + i + " de 3");
-                System.out.println("1. Ataque simples");
-                System.out.println("2. Usar habilidade especial");
-                System.out.println("3. Subir nivel");
-                System.out.println("4. Status do guerreiro");
-                System.out.print("Escolha a acao: ");
-                int escolha = ler.nextInt();
-                ler.nextLine(); // Consumir enter
-
-                switch (escolha) {
-                    case 1:
-                        jogo2.ataqueGuerreiro1();
-                        break;
-                    case 2:
-                        if (jogo2.manaDoGuerreiro1 >= 50) {
-                            jogo2.usarHabilidadeEspecialGuerreiro1();
-                        } else {
-                            System.out.println("Mana insuficiente!");
-                            i--; // não conta essa ação
-                        }
-                        break;
-                    case 3:
-                        jogo2.subirNivelGuerreiro1();
-                        break;
-                    case 4:
-                        jogo2.mostrarStatusGuerreiro1();
-                        i--;
-                        break;
-                    default:
-                        System.out.println("Opção inválida!");
-                        i--; // não conta essa ação
-                }
+           
+    
+    
 
                 // Verifica vitória do Guerreiro
-                if (jogo1.vidaDoArqueiro <= 0) {
-                    System.out.println("\nO arqueiro " + jogo2.nomeDoGuerreiro1 + " foi derrotado!");
-                    System.out.println("O guerreiro " + jogo1.nomeDoGuerreiro1 + " venceu!");
+                if (jogo1.vidaDoGuerreiro1 <= 0) {
+                    System.out.println("\nO guerreiro " + jogo1.nomeDoGuerreiro1 + " foi derrotado!");
+                    System.out.println("O guerreiro " + jogo2.nomeDoGuerreiro1 + " venceu!");
                     jogoAtivo = false;
                     break;
                 }
             }
+ }
+
+                
     
 
 
 }
 }
 
+*/
 
 
-/*import java.util.Scanner;
+
+import java.util.Scanner;
 
 public class JogoFinal {
 
@@ -152,7 +124,7 @@ public class JogoFinal {
 
             // Turno do Guerreiro
             for (int i = 1; i <= 3; i++) {
-                System.out.println("\nTurno do Guerreiro - Acao " + i + " de 3");
+                System.out.println("\nTurno do Guerreiro "+jogo.nomeDoGuerreiro1+" - Acao " + i + " de 3");
                 System.out.println("1. Ataque simples");
                 System.out.println("2. Usar habilidade especial");
                 System.out.println("3. Subir nivel");
@@ -181,7 +153,7 @@ public class JogoFinal {
                         i--;
                         break;
                     default:
-                        System.out.println("Opção inválida!");
+                        System.out.println("Opcao invalida!");
                         i--; // não conta essa ação
                 }
 
@@ -198,12 +170,12 @@ public class JogoFinal {
 
             // Turno do Arqueiro
             for (int i = 1; i <= 3; i++) {
-                System.out.println("\nTurno do Arqueiro - Ação " + i + " de 3");
+                System.out.println("\nTurno do Arqueiro "+jogo.nomeDoArqueiro+" - Acao " + i + " de 3");
                 System.out.println("1. Ataque simples");
                 System.out.println("2. Usar habilidade especial");
-                System.out.println("3. Subir nível");
+                System.out.println("3. Subir nivel");
                 System.out.println("4. Status do arqueiro");
-                System.out.print("Escolha a ação: ");
+                System.out.print("Escolha a acao: ");
                 int escolha = ler.nextInt();
                 ler.nextLine(); // Consumir enter
 
@@ -227,7 +199,7 @@ public class JogoFinal {
                         i--;
                         break;
                     default:
-                        System.out.println("Opção inválida!");
+                        System.out.println("Opcao invalida!");
                         i--; // não conta essa ação
                 }
 
@@ -244,6 +216,6 @@ public class JogoFinal {
         ler.close();
     }
 }
-*/
+
 
 

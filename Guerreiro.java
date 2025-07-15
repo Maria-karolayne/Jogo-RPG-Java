@@ -2,7 +2,7 @@ public class Guerreiro{
  
     // Atributos do guerreiro1
     public String nomeDoGuerreiro1;
-    public String classeDoGuerreiro1 = "guerreiro";
+    public String classeDoGuerreiro1 = "Guerreiro";
     public int nivelDoGuerreiro1 = 1;
     public int vidaDoGuerreiro1 = 100;
     public int manaDoGuerreiro1 = 0;
@@ -44,7 +44,7 @@ public class Guerreiro{
     }
  
     public void mostrarStatusGuerreiro1(){
-        String mensagem = "Nome do guerreiro: " +nomeDoGuerreiro1+" | Classe: "+classeDoGuerreiro1+" | Nível: "+nivelDoGuerreiro1+ " | Força: "+forcaDoGuerreiro1+ " | Mana: "+manaDoGuerreiro1;
+        String mensagem = "Nome do guerreiro: " +nomeDoGuerreiro1+" | Classe: "+classeDoGuerreiro1+" | Nivel: "+nivelDoGuerreiro1+ " | Forca: "+forcaDoGuerreiro1+ " | Mana: "+manaDoGuerreiro1;
         String personagem = 
         "  O  \n" +
       " /|\\ \n" +
@@ -67,14 +67,11 @@ public class Guerreiro{
         manaDoGuerreiro1 += 50;
         forcaDoGuerreiro1 +=10;
 
-        String mensagem = "Nível do guerreiro: "+nivelDoGuerreiro1+ "\nVida do guerreiro:"+vidaDoGuerreiro1;
+        String mensagem = "Nivel do guerreiro: "+nivelDoGuerreiro1+ "\nVida do guerreiro:"+vidaDoGuerreiro1;
         System.out.println(mensagem);
     }
  
- 
-    public void desenharPersonagem(){
-       
-    }
+
 
     // Metodos Arqueiro
     public void ataqueArqueiro(){
@@ -102,8 +99,17 @@ public class Guerreiro{
     }
  
     public void mostrarStatusArqueiro(){
-        String mensagem = "Nome do arqueiro: " +nomeDoArqueiro+" | Classe: "+classeDoArqueiro+" | Nível: "+nivelDoArqueiro+ " | Força: "+forcaDoArqueiro+ " | Mana: "+manaDoArqueiro;
+        String mensagem = "Nome do arqueiro: " +nomeDoArqueiro+" | Classe: "+classeDoArqueiro+" | Nivel: "+nivelDoArqueiro+ " | Forca: "+forcaDoArqueiro+ " | Mana: "+manaDoArqueiro;
+        String personagem = 
+        "  O  \n" +
+      " /|\\ \n" +
+      "  |   --|>\n" +
+      " / \\ \n";
+    
         System.out.println(mensagem);
+        System.out.println(personagem);
+
+
        
     }
  
@@ -116,7 +122,7 @@ public class Guerreiro{
         manaDoArqueiro += 50;
         forcaDoArqueiro +=10;
 
-        String mensagem = "Nível do arqueiro: "+nivelDoArqueiro+ "\nVida do arqueiro:"+vidaDoArqueiro;
+        String mensagem = "Nivel do arqueiro: "+nivelDoArqueiro+ "\nVida do arqueiro:"+vidaDoArqueiro;
         System.out.println(mensagem);
     }
 
