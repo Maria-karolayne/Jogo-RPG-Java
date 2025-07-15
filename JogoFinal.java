@@ -109,10 +109,10 @@ public class JogoFinal {
         System.out.println("---- Regras ----");
         System.out.println("1 - Para usar habilidade especial precisa de 50 mana(para subir mana usar subir nivel)");
         System.out.println("2 - Vida maxima: 100;");
-        System.out.println("3 - Cada jogador pode jogar 3 vezes antes de passar a vez;\n");
-        System.out.println("4 - Ver status n conta rodada;\n");
+        System.out.println("3 - Cada jogador pode jogar 3 vezes antes de passar a vez;");
+        System.out.println("4 - Ver status n conta rodada;");
         System.out.println("5 - Vence quem deixar o oponente com a vida = 0 primeiro;\n");
-        
+
 
         // Recebe nomes
         System.out.print("Informe o nome do guerreiro: ");

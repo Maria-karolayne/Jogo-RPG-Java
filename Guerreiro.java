@@ -100,14 +100,14 @@ public class Guerreiro{
  
     public void mostrarStatusArqueiro(){
         String mensagem = "Nome do arqueiro: " +nomeDoArqueiro+" | Classe: "+classeDoArqueiro+" | Nivel: "+nivelDoArqueiro+ " | Forca: "+forcaDoArqueiro+ " | Mana: "+manaDoArqueiro;
-        String personagem = 
-        "  O  \n" +
+        String personagemA = 
+      "  O  \n" +
       " /|\\ \n" +
-      "  |   --|>\n" +
-      " / \\ \n";
+     "  |}====> \n "+
+      "/ \\ \n";
     
         System.out.println(mensagem);
-        System.out.println(personagem);
+        System.out.println(personagemA);
 
 
        
